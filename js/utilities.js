@@ -9,3 +9,11 @@ function innerTextById(id){
     const balanceNumber =  parseFloat(balance);
     return balanceNumber;
 }
+
+
+function showSectionById (id){
+    const donationHomePage = document.getElementById('donation-page').classList.add('hidden')
+    const historyPage = document.getElementById('history').classList.add('hidden')
+
+    const showSection = document.getElementById(id).classList.remove('hidden')
+}
