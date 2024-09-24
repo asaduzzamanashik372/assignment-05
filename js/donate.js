@@ -12,12 +12,20 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
         alert('tnx for your donation')
         
         const p = document.createElement('p')
+        
         p.innerText = `${donateNoakhali} Tk Is Donated For Flood At Noakhali, Bangladesh`
         p.classList.add('text-3xl')
         p.classList.add('border-2')
         p.classList.add('p-10')
         p.classList.add('mt-10')
+        
         document.getElementById('history').appendChild(p);
+
+        times = document.createElement('p')
+        times.innerHTML = new Date().toDateString();
+        document.getElementById('history').appendChild(times);
+
+        
 
         
     }
@@ -69,6 +77,10 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
         p.classList.add('p-10')
         p.classList.add('mt-10')
         document.getElementById('history').appendChild(p);
+
+        times = document.createElement('p')
+        times.innerHTML = new Date().toDateString();
+        document.getElementById('history').appendChild(times);
         
 
         
@@ -116,6 +128,10 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
         p.classList.add('p-10')
         p.classList.add('mt-10')
         document.getElementById('history').appendChild(p);
+
+        times = document.createElement('p')
+        times.innerHTML = new Date().toDateString();
+        document.getElementById('history').appendChild(times);
     }
     else{
         alert('Wrong input')
