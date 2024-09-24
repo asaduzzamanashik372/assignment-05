@@ -52,12 +52,12 @@
             <section>
                 <div class="lg:grid grid-cols-2 gap-5 border-2 py-5 px-10 rounded-lg lg:mx-28">
                     <!-- banner img start -->
-                    <div class="flex justify-center items-center "><img src="./assets/noakhali.png" alt=""></div>
+                    <div class="flex justify-center items-center "><img class="" src="./assets/noakhali.png" alt=""></div>
                     <!-- banner img end -->
 
                     <!-- banner text container start -->
 
-                    <div class=""> <!-- text container parent div -->
+                    <div class="w-full"> <!-- text container parent div -->
                         <div class="flex  items-center px-5 py-3 bg-gray-100 max-w-40 rounded-lg mb-5 gap-1">
                             <div><img src="./assets/coin.png" alt=""></div>
                             <div id="noakhali-donation">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
 
-                        <h1 class="mb-5 text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <h1 class="mb-5 text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh<h1>
                         <p class="mb-5"> The recent floods in Noakhali have caused significant damage to homes
                             infrastructure. Your donation will help provide essential supplies and to those affected by
                             this disaster. Every contribution, big or small, makes difference. Please join us in
@@ -77,9 +77,22 @@
                         <input id="input-donate-noakhali" class="mb-5 w-full h-14 px-2 border-2 rounded-md" type="text"
                             placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" /> <br>
 
-                        <button id="donate-noakhali-btn" class="btn btn-wide w-full bg-[#B4F461]">Donate Now</button>
-
-                        
+                    <!-- modal start -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="donate-noakhali-btn" class="btn btn-wide w-full bg-[#B4F461]" >Donate Now</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">Thank You For Your Support</h3>
+                                <p class="py-4">Your kindness is a lifeboat for those in need.</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Ok</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        <!-- modal end -->
 
 
                     </div>
@@ -119,9 +132,23 @@
                         <input id="input-donation-feni" class="mb-5 w-full h-14 px-2 border-2 rounded-md" type="text"
                             placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" /> <br>
 
-                        <button id="feni-donation-btn" class="btn btn-wide w-full bg-[#B4F461]">Donate Now</button>
 
-
+                            <!-- modal start -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="feni-donation-btn" class="btn btn-wide w-full bg-[#B4F461]" >Donate Now</button>
+                        <dialog id="my_modal_2" class="modal">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">Thank You For Your Support</h3>
+                                <p class="py-4">Your kindness is a lifeboat for those in need.</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Ok</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        <!-- modal end -->
 
 
                     </div>
@@ -163,7 +190,24 @@
                         <input id="input-quota-donation" class="mb-5 w-full h-14 px-2 border-2 rounded-md" type="text"
                             placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" /> <br>
 
-                        <button id="quota-donation-btn" class="btn btn-wide w-full bg-[#B4F461]">Donate Now</button>
+                        
+
+                        <!-- modal start -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="quota-donation-btn" class="btn btn-wide w-full bg-[#B4F461]" >Donate Now</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">Thank You For Your Support</h3>
+                                <p class="py-4">We Hope Everything Will Be Okay Soon..</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Ok</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        <!-- modal end -->
 
 
                         <!-- modal start -->
@@ -190,7 +234,7 @@
     <script src="./js/donate.js"></script>
     <script src="./js/feature.js"></script>
     <script src="./js/utilities.js"></script>
-    <script src="./js/faq.js"></script>
+    <script src="./js/blog.js"></script>
 
 </body>
 

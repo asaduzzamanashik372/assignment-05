@@ -6,10 +6,11 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     const balance = innerTextById('balance');
     
 
-    if(!isNaN(donateNoakhali) && donateNoakhali > 1){
+    if(!isNaN(donateNoakhali) && donateNoakhali > 0){
         const newBalance = balance - donateNoakhali;
         document.getElementById('balance').innerText = newBalance;
-        alert('tnx for your donation')
+        document.getElementById("my_modal_1").showModal();
+
         
         const p = document.createElement('p')
         
@@ -65,10 +66,10 @@ document.getElementById('feni-donation-btn').addEventListener('click', function(
     const balance = innerTextById('balance');
     
 
-    if(!isNaN(donatefeni) && donatefeni > 1){
+    if(!isNaN(donatefeni) && donatefeni > 0){
         const newBalance = balance - donatefeni;
         document.getElementById('balance').innerText = newBalance;
-        alert('Tnx for your donation')
+        document.getElementById("my_modal_2").showModal();
 
         const p = document.createElement('p')
         p.innerText = `${donatefeni} Tk Is Donated For Flood At Feni, Bangladesh`
@@ -116,10 +117,10 @@ document.getElementById('quota-donation-btn').addEventListener('click', function
     const quotaDonation = inputFieldById('input-quota-donation');
     const balance = innerTextById('balance');
 
-    if(!isNaN(quotaDonation) && quotaDonation > 1){
+    if(!isNaN(quotaDonation) && quotaDonation > 0){
         const newDonationBalance = balance - quotaDonation;
         document.getElementById('balance').innerText = newDonationBalance
-        alert('Tnx for your donation')
+        document.getElementById("my_modal_3").showModal();
 
         const p = document.createElement('p')
         p.innerText = `${quotaDonation} Tk Is Donated For Quota Movement, Bangladesh`
